@@ -1,0 +1,25 @@
+{
+  "backups_enabled": true,
+  "s3": {
+    "endpoint_uri": "YOUR_S3_URI",
+    "access_key": "YOUR_ACCESS_KEY",
+    "secret_key": "YOUR_SECRET_KEY",
+    "bucket": "YOUR_BUCKET_NAME",
+    "backup_interval": 60
+  },
+  "telegram_alert_channel_id": "YOUR_CHANNEL_ID",
+  "booking_services": {
+    "pc": true,
+    "console": true,
+    "billiard": true
+  },
+  "booking_services_count": {
+    "pc_count": 30,
+    "console": ["NAME_OF_CONSOLE_1", "NAME_OF_CONSOLE_2"],
+    "billiard": ["NAME_OF_BILLIARDS_TABLE_1", "NAME_OF_BILLIARDS_TABLE_2", "NAME_OF_BILLIARDS_TABLE_3"]
+  },
+  "booking_time": [9, 20],
+  "booking_interval": 15,
+  "min_booking_time": 15,
+  "max_booking_time": 120
+}
