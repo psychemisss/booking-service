@@ -35,14 +35,14 @@ async def get_device(device_id: int):
     return {"result": result}
 
 
-@booking_router.get()
-async def create_device(device_name: str, device_type: int):
-    """
-    Function for device creation
-    :param device_name: device name
-    :param device_type: device type
-    """
-    query = Device.insert().values(name=device_name, type=device_type)
-    connection = engine.connect()
-    result = connection.execute(query)
-    return {"result": result}
+# @booking_router.get("/create")
+# async def create_device(device_name: str, device_type: int):
+#     """
+#     Function for device creation
+#     :param device_name: device name
+#     :param device_type: device type
+#     """
+#     query = Device.insert().values(name=device_name, type=device_type)
+#     connection = engine.connect()
+#     result = connection.execute(query)
+#     return {"result": result}

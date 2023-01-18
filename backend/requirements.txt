@@ -1,5 +1,9 @@
-fastapi~=0.89.1
-starlette~=0.22.0
-pydantic~=1.10.4
-SQLAlchemy~=1.4.46
-databases~=0.7.0
+fastapi==0.77.1
+fastapi-crudrouter==0.8.5
+starlette==0.19.1
+pydantic~=1.10.2
+SQLAlchemy~=1.4.41
+databases~=0.6.1
+uvicorn==0.17.6
+asyncpg==0.26.0
+psycopg2-binary

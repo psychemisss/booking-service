@@ -1,8 +1,14 @@
 import json
+import os
 
+def find_config_file():
+    for root, dirs, files in os.walk(os.getcwd()):
+        for file in files:
+            if file == 'config.json':
+                return os.path.join(root, file)
 
 class ConfigLoader:
-    def __init__(self, config_file: str = 'config.json'):
+    def __init__(self, config_file: str = find_config_file()):
         self.config_file = config_file
 
     @property
