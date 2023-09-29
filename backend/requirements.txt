@@ -1,7 +1,7 @@
 fastapi==0.77.1
 fastapi-crudrouter==0.8.5
 starlette==0.19.1
-pydantic~=1.10.2
+pydantic~=2.4.0
 SQLAlchemy~=1.4.41
 databases~=0.6.1
 uvicorn==0.17.6
