@@ -7,3 +7,4 @@ databases~=0.6.1
 uvicorn==0.17.6
 asyncpg==0.26.0
 psycopg2-binary
+anyio>=4.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
